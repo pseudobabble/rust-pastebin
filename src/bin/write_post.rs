@@ -16,7 +16,7 @@ fn main() {
     stdin().read_to_string(&mut body).unwrap();
 
     let post = create_post(&connection, title, &body);
-    println!("\nSaved draft {} with id {}", title, post.id);
+    println!("\nSaved draft {}", title);
 }
 
 #[cfg(not(windows))]
