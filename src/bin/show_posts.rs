@@ -5,7 +5,6 @@ use self::rust_pastebin::*;
 use self::models::*;
 use self::diesel::prelude::*;
 
-use crate::diesel::associations::HasTable;
 
 fn main() {
     use rust_pastebin::schema::posts::dsl::*;

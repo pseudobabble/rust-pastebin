@@ -24,7 +24,6 @@ pub fn establish_connection() -> SqliteConnection {
 
 pub fn create_post<'a>(conn: &SqliteConnection, title: &'a str, body: &'a str) -> Post {
     use schema::posts::dsl;
-    use schema::posts;
 
     let new_post = NewPost {
         title: title,
